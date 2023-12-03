@@ -29,4 +29,12 @@ for(int j=0; j<5; j++){
    }
 } 
 check();
-   }
+if(rotation == true){
+  for(int k=0; k<5; k++){
+    myservo[k].write(90);
+    delay(150);
+    targetAngle[k] = 90;
+    rotation[k] = 0;
+    Serial.println(rotation[k]);
+  }
+   }}
